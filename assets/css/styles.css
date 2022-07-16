@@ -1,0 +1,110 @@
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:30px;
+	right:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:4px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+a.whatsapp_float:hover {
+    background-color: rgb(7, 255, 69);
+    color: whitesmoke;
+    box-shadow: lawngreen;
+    animation: bounce 1.5s;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+    } 
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+
+    }    
+    
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+
+    }
+}
+
+
+
+
+.reveal {
+    position: relative;
+    opacity: 0.5;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
